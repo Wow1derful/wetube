@@ -7,10 +7,9 @@ import userRouter from"./routers/userRouter";
 import videoRouter from"./routers/vidoeRouter";
 import globalRouter from"./routers/globalRouter";
 import routes from"./routes";
-
-
 const app = express();
 
+app.set("view engine","pug");
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
